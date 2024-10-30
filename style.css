@@ -1,10 +1,67 @@
-* {
+
+body{ 
+    font-family: "Dancing Script";
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000; 
+}
+
+
+.img-1{
+    width: 50px;
+    margin-right: 150px;
+    animation: giro 4s ease-out forwards; 
+}
+
+.title {
+    font-size: 20px; 
+}
+
+nav {
+    margin-top: 80px; 
+    text-align: center;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.container {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-top: 30px;
+    position: relative;
+  }
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    z-index: 1;
+  }
+
+*{
     margin: 0;
     border: 0;
     padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #f3f1f1;
 }
+
 
 h1 {
     font-size: 24px;
@@ -23,10 +80,10 @@ ul {
 li a {
     min-width: 100px;
     text-align: center;
-    padding: 15px; /* Adjust padding as needed */
-    color: rgb(245, 243, 243); /* Darker text color */
-    font-weight: bold; /* Clearer text */
-    align-items: center; /* Center content vertically */
+    padding: 15px; 
+    color: rgb(245, 243, 243); 
+    font-weight: bold; 
+    align-items: center; 
     background-color: #999;
     text-decoration: none;
     padding: 10px;
@@ -34,8 +91,8 @@ li a {
 }
 
 li a:hover {
-    background-color: #222; /* Darker hover background */
-    color: #888; /* White text on hover */
+    background-color: #222; 
+    color: #888; 
 }
 
 label {
@@ -116,5 +173,23 @@ th {
     padding-bottom: 12px;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 5px; 
+    right: 10px; 
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF; 
+    color: white; 
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 50px; 
+    text-decoration: none; 
+    font-size: 50px; 
+}
+
+.back-to-top:hover {
+    background-color: #0056b3; 
+}
 
 
